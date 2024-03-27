@@ -40,7 +40,7 @@ export default function DumiContextWrapper() {
       loading,
       setLoading,
       hostname: undefined,
-      themeConfig: {"logo":"https://simlove-sdk.oss-cn-shenzhen.aliyuncs.com/sl-web-sdk/img/logo.png","title":"sl-react-ui","footer":"simplove-简爱官方文档","prefersColor":{"default":"light","switch":true},"nprogress":true,"lastUpdated":true,"socialLinks":{"github":"https://liuxiangproject.coding.net/p/liuxaing/d/lx-document/git"},"rtl":true},
+      themeConfig: {"logo":"https://simlove-sdk.oss-cn-shenzhen.aliyuncs.com/sl-web-sdk/img/logo.png","title":"docs-dist","footer":"simplove-简爱官方文档","prefersColor":{"default":"light","switch":true},"nprogress":true,"lastUpdated":true,"socialLinks":{"github":"https://liuxiangproject.coding.net/p/liuxaing/d/lx-document/git"},"rtl":true},
       _2_level_nav_available: true,
     }}>
       {outlet}
