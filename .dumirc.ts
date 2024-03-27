@@ -1,12 +1,12 @@
 import { defineConfig } from 'dumi';
-const repo = 'sl-react-ui';
+const repo = 'docs-dist';
 export default defineConfig({
   title: repo,
   logo:
     'https://simlove-sdk.oss-cn-shenzhen.aliyuncs.com/sl-web-sdk/img/logo.png',
-  outputPath: 'docs-dist',
-  base: `/`,
-  publicPath: `/`,
+  outputPath: repo,
+  base: `/${repo}/`,
+  publicPath: `/${repo}/`,
   scripts: [
     'https://simlove-sdk.oss-cn-shenzhen.aliyuncs.com/SL_WEB_SDK/@1.3.98.js',
     `SDK.install({
