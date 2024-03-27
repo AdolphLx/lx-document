@@ -12,7 +12,7 @@ import Loading from '@@/dumi/theme/loading';
 import { ApplyPluginsType } from 'umi';
 
 
-const publicPath = "/docs-dist/";
+const publicPath = "/lx-document/";
 const runtimePublicPath = false;
 
 async function render() {
@@ -35,7 +35,7 @@ async function render() {
     initialValue: {},
   });
 
-  const basename = contextOpts.basename || '/docs-dist/';
+  const basename = contextOpts.basename || '/lx-document/';
   const historyType = contextOpts.historyType || 'browser';
 
   const history = createHistory({

@@ -1,10 +1,10 @@
 import { defineConfig } from 'dumi';
-const repo = 'docs-dist';
+const repo = 'lx-document';
 export default defineConfig({
   title: repo,
   logo:
     'https://simlove-sdk.oss-cn-shenzhen.aliyuncs.com/sl-web-sdk/img/logo.png',
-  outputPath: repo,
+  outputPath: 'docs-dist',
   base: `/${repo}/`,
   publicPath: `/${repo}/`,
   scripts: [
