@@ -3,10 +3,10 @@
 // DO NOT CHANGE IT MANUALLY!
 import React, { useState, useEffect, useRef } from 'react';
 import { useOutlet, history } from 'dumi';
-import { SiteContext } from '/Users/liuxiang/Desktop/简爱项目/lx-document/node_modules/dumi/dist/client/theme-api/context.js';
+import { SiteContext } from '/Users/liuxiang/Desktop/简爱项目/项目模版/github仓库/lx-document/node_modules/dumi/dist/client/theme-api/context.js';
 import { demos, components } from '../meta';
 import { locales } from '../locales/config';
-import * as entryMemberExports from '/Users/liuxiang/Desktop/简爱项目/lx-document/src/apiTypes.tsx';
+import * as entryMemberExports from '/Users/liuxiang/Desktop/简爱项目/项目模版/github仓库/lx-document/src/apiTypes.tsx';
 
 const entryExports = {
   

@@ -3,8 +3,8 @@
 // DO NOT CHANGE IT MANUALLY!
 import './core/polyfill';
 import { getPluginManager as getDumiPluginManager } from './core/plugin';
-import { setPluginManager as setDumiPluginManager } from '/Users/liuxiang/Desktop/简爱项目/lx-document/node_modules/dumi/dist/client/theme-api/utils.js';
-import { renderClient } from '/Users/liuxiang/Desktop/简爱项目/lx-document/node_modules/@umijs/renderer-react';
+import { setPluginManager as setDumiPluginManager } from '/Users/liuxiang/Desktop/简爱项目/项目模版/github仓库/lx-document/node_modules/dumi/dist/client/theme-api/utils.js';
+import { renderClient } from '/Users/liuxiang/Desktop/简爱项目/项目模版/github仓库/lx-document/node_modules/@umijs/renderer-react';
 import { getRoutes } from './core/route';
 import { createPluginManager } from './core/plugin';
 import { createHistory } from './core/history';
@@ -12,7 +12,7 @@ import Loading from '@@/dumi/theme/loading';
 import { ApplyPluginsType } from 'umi';
 
 
-const publicPath = "/sl-react-ui/";
+const publicPath = "/";
 const runtimePublicPath = false;
 
 async function render() {
@@ -35,7 +35,7 @@ async function render() {
     initialValue: {},
   });
 
-  const basename = contextOpts.basename || '/sl-react-ui/';
+  const basename = contextOpts.basename || '/';
   const historyType = contextOpts.historyType || 'browser';
 
   const history = createHistory({

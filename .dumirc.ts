@@ -5,8 +5,8 @@ export default defineConfig({
   logo:
     'https://simlove-sdk.oss-cn-shenzhen.aliyuncs.com/sl-web-sdk/img/logo.png',
   outputPath: 'docs-dist',
-  base: `/${repo}/`,
-  publicPath: `/${repo}/`,
+  base: `/`,
+  publicPath: `/`,
   scripts: [
     'https://simlove-sdk.oss-cn-shenzhen.aliyuncs.com/SL_WEB_SDK/@1.3.98.js',
     `SDK.install({

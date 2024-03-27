@@ -3,15 +3,15 @@
 // DO NOT CHANGE IT MANUALLY!
 import { history } from 'dumi';
 import React, { useState, useLayoutEffect, useCallback, type ReactNode } from 'react';
-import { RawIntlProvider, createIntl, createIntlCache } from '/Users/liuxiang/Desktop/简爱项目/lx-document/node_modules/react-intl';
-import { useIsomorphicLayoutEffect } from '/Users/liuxiang/Desktop/简爱项目/lx-document/node_modules/dumi/dist/client/theme-api/utils.js'
+import { RawIntlProvider, createIntl, createIntlCache } from '/Users/liuxiang/Desktop/简爱项目/项目模版/github仓库/lx-document/node_modules/react-intl';
+import { useIsomorphicLayoutEffect } from '/Users/liuxiang/Desktop/简爱项目/项目模版/github仓库/lx-document/node_modules/dumi/dist/client/theme-api/utils.js'
 import { locales, messages } from './config';
 
 const cache = createIntlCache();
 
 const LocalesContainer: FC<{ children: ReactNode }> = (props) => {
   const getIntl = useCallback(() => {
-    const base = "/sl-react-ui"
+    const base = ""
     const matched = locales.slice().reverse().find((locale) => (
       'suffix' in locale
         // suffix mode
