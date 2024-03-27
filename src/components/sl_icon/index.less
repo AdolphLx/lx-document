@@ -1,0 +1,31 @@
+.iconLists{
+    display: flex;
+    flex-wrap: wrap;
+    .iconItem{
+        width: 100px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        font-size: 26px;
+        margin: 10px;
+        cursor: pointer;
+        padding: 10px;
+    }
+    .iconItemText{
+        width: 100%;
+        text-align: center;
+        color: #666;
+        font-size: 14px;
+        white-space: nowrap; /* 不换行 */
+        overflow: hidden; /* 溢出部分隐藏 */
+        text-overflow: ellipsis; /* 显示省略号 */
+    }
+   
+    .iconItem:hover{
+        background: rgba(0,0,0,.05);
+        .iconItemText{
+            color: #409EFF;
+        }
+    }
+}

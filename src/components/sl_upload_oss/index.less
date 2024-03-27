@@ -1,0 +1,175 @@
+ // 暗色模式变黑色
+ [data-prefers-color="dark"] .uploadOss{
+    background: #000;
+ }
+.uploadOssBox{
+    max-width: 800px;
+  }
+  .uploadOss{
+    width: 100%;
+    max-width: 800px;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.02);
+    border: 1px dashed #d9d9d9;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    p{
+      font-size: 16px;
+      color: #8c939d;
+      width: 100%;
+      text-align: center;
+    }
+    .icon{
+      font-size: 40px;
+      color: #1677ff !important;
+    }
+  }
+
+  .imgUrls{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .imgUrlItem{
+      width: 100px;
+      height: 100px;
+      background: rgba(0, 0, 0, 0.02);
+      border: 1px dashed #d9d9d9;
+      border-radius: 8px;
+      margin: 5px 5px 0 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer;
+      img{
+        width: 100%;
+      }
+      video{
+        width: 100%;
+        height: 100%;
+      }
+      .iconDelete{
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        display: flex;
+        color: #fff;
+        background: #1677ff;
+        border-radius: 50%;
+        transition: all 0.3s;
+        transform: scale(0);
+        z-index: 9;
+      }
+      .progressBox{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        background: rgba(255,255,255,0.7);
+      }
+      .progress{
+        border-radius: 50%;
+      }
+    }
+    .imgUrlItem:hover{
+      .iconDelete{
+        transform: scale(1);
+      }
+    }
+  }
+  .fileItems{
+    display: flex;
+    line-height: 30px;
+    color: #999;
+    cursor: pointer;
+    width: max-content;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: relative;
+    .name{
+      color: #1677ff;
+      padding:  0 5px;
+    }
+    
+    .delete{
+      width: 10%;
+      transition: all 0.3s;
+      color: red;
+      display: none;
+    }
+    .fileItemLeft{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex: 1;
+      .fileItemContent{
+        flex: 1;
+      }
+    }
+  }
+  .fileItems .progress{
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 5px;
+  }
+  .fileItems:hover{
+    background: rgba(0, 0, 0, 0.02);;
+    .delete{
+      display: block;
+    }
+  }
+  .loader{
+    transform: rotate(0deg);
+    animation: rotate 1s linear infinite;
+    display: inline-block;
+  }
+  
+  @keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .normal_color{
+    color: #999;
+    padding:  0 5px;
+  }
+  .success_color{
+    color: #1677ff;
+    padding:  0 5px;
+  }
+  .exception_color{
+    color: red;
+    padding:  0 5px;
+  }
+  .imgException{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+  }
+  .imgExceptionBtn{
+    color: #fff;
+    width: 100%;
+    text-align: center;
+  }
